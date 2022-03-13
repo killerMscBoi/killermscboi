@@ -3,7 +3,7 @@
 3. [Affine Chipher](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/AffineCipher.java)
 4. [Rail Fence Cipher](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/RailFenceCipher.java)
 5. [Vermine Cipher](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/VerminCipher.java)
-6. [RSA]()
+6. [RSA](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/RSA.java)
 7. [ElGamal Cipher](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/ElGamalCipher.java)
 8. [Diffie Hellman Key Exchange](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/DiffieHellmanKeyExchange.java)
 9. [Message Digest 5](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/MessageDigest5.java)
