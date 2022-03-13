@@ -1,1 +1,12 @@
-msc ki maa ki ankh
+1. Chinese Remainder Theorem []
+2. Fermat's Little Theorem []
+3. Affine Chipher []
+4. Rail Fence Cipher []
+5. Vermine Cipher []
+6. RSA []
+7. ElGamal Cipher []
+8. Diffie Hellman Key Exchange []
+9. Message Digest 5 []
+10. Initial Permutation in DES []
+11. DES Key generation []
+12. HMAC []
