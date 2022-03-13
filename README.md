@@ -8,5 +8,5 @@
 8. [Diffie Hellman Key Exchange](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/DiffieHellmanKeyExchange.java)
 9. [Message Digest 5](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/MessageDigest5.java)
 10. [Initial Permutation in DES]()
-11. [DES Key generation]()
+11. [DES Key generation](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/generatesymkeys.java)
 12. [HMAC](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/HMACSignatures.java)
