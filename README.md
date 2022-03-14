@@ -1,12 +1,15 @@
+AI
+[Breadth First Search]()
+[Deep Depth First]()
+[A* search]()
+[Best First Search]()
+[Decision Tree Learning]()
+[ANN]()
+[Feed Forward Back Propagation]()
+[Naive Bayes]()
 
 
-
-
-
-
-
-
-
+Cyber
 
 1. [Chinese Remainder Theorem](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/ChineseRemainderTheorem.java)
 2. [Fermat's Little Theorem](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/FermatsLittletheorem.java)
