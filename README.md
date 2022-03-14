@@ -8,7 +8,7 @@ AI
 7. [Feed Forward Back Propagation](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/Feed_forward.py)
 8. [Naive Bayes](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/Naive.py)
 
-[AI THEORY]()
+[AI THEORY](https://github.com/killerMscBoi/killermscboi/blob/main/AI%20THEORY.docx?raw=true)
 
 1. [Breadth First Search]()
 2. [Deep Depth First]()
