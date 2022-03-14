@@ -1,68 +1,46 @@
 # Feed Forward
 import numpy as np
 
-class NeuralNetwork():
-    def __init__(self):
-        #seeding for random number generation
-        np.random.seed()
+def activfun_sigmoid(x, deriv=False):  # sigmoid function
+    if (deriv == True):
+        return x * (1 - x)  # g'(z) Pg 727
+    return 1 / (1 + np.exp(-x))  # Log(z) Pg 725
 
-        #converting weights to a 3 by 1 matrix
-        self.synaptic_weights=2*np.random.random((3,1))-1
 
-    #x is output variable
-    def sigmoid(self, x):
-        #applying the sigmoid function
-        return 1/(1+np.exp(-x))
+# input data from hotel.csv with 4 feature columns & first 8 rows, 1-True, 0-False
+X = np.array([[1, 1, 0, 1],
+              [0, 0, 0, 0],
+              [0, 1, 1, 1],
+              [1, 1, 1, 1],
+              [0, 1, 0, 1],
+              [0, 1, 0, 0],
+              [1, 0, 0, 1],
+              [0, 1, 0, 0]])
 
-    def sigmoid_derivative(self,x):
-        #computing derivative to the sigmoid function
-        return x*(1-x)
+# result column, wait -> 0, Leave -> 1
+y = np.array([[0, 0, 1, 0, 1, 0, 1, 0]]).T
 
-    def train(self,training_inputs,training_outputs,training_iterations):
+np.random.seed(1)  # add this line if you want same output in multliple executions
+# initialize weights randomly with values between -1 to 1 with mean 0
+w0 = 2 * np.random.random((4, 4)) - 1
+w1 = 2 * np.random.random((4, 1)) - 1
+for n in range(140):
+    l_input = X  # x
 
-        #training the model to make accurate predictions while adjusting
-        for iteration in range(training_iterations):
-            #siphon the training data via the neuron
-            output=self.think(training_inputs)
+    # feed forward
+    l1 = activfun_sigmoid(l_input.dot(w0))
+    l_output = activfun_sigmoid(l1.dot(w1))
 
-            error=training_outputs-output
+    # Error calculation
+    l_output_error = y - l_output
+    l_output_delta = l_output_error * activfun_sigmoid(l_output, True)  # (y-h(x))  * ( h(x)*(1-h(x)))
+    l1_error = l_output_delta.dot(w1.T)
+    l1_delta = l1_error * activfun_sigmoid(l1, deriv=True)
 
-            #performing weight adjustments
-            adjustments=np.dot(training_inputs.T,error*self.sigmoid_derivative(output))
+    # backpropagation and up
+    w1 = w1 + 2 * l1.T.dot(l_output_delta)
+    w0 = w0 + 2 * l_input.T.dot(l1_delta)
 
-            self.synaptic_weights+=adjustments
-
-    def think(self,inputs):
-        #passing the inputs via the neuron to get output
-        #converting values to floats
-
-        inputs=inputs.astype(float)
-        output=self.sigmoid(np.dot(inputs,self.synaptic_weights))
-
-        return output
-
-if __name__=="__main__":
-
-    #initializing the neuron class
-    neural_network=NeuralNetwork()
-
-    print("Beginning randomly generated weights: ")
-    print(neural_network.synaptic_weights)
-
-    #training data consisting of 4 examples--3 inputs & 1 output
-    training_inputs=np.array([[0,0,1],[1,1,1],[1,0,1],[0,1,1]])
-    training_outputs=np.array([[0,1,1,0]]).T
-
-    #training taking place
-    neural_network.train(training_inputs,training_outputs,15000)
-
-    print("Ending weights after training: ")
-    print(neural_network.synaptic_weights)
-
-    user_input_one=str(input("User Input One: "))
-    user_input_two=str(input("User Input Two: "))
-    user_input_three=str(input("User Input Three: "))
-
-    print("Considering new situation: ",user_input_one,user_input_two,user_input_three)
-    print("New output data: ")
-    print(neural_network.think(np.array([user_input_one,user_input_two,user_input_three])))
+print("Output After Training:")
+print(l_output)
+print("Loss: \n" + str(np.mean(np.square(y - l_output))))
