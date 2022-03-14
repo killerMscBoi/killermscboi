@@ -1,12 +1,12 @@
 AI
-[Breadth First Search]()
-[Deep Depth First]()
-[A* search]()
-[Best First Search]()
-[Decision Tree Learning]()
-[ANN]()
-[Feed Forward Back Propagation]()
-[Naive Bayes]()
+1. [Breadth First Search]()
+2. [Deep Depth First]()
+3. [A* search]()
+4. [Best First Search]()
+5. [Decision Tree Learning]()
+6. [ANN]()
+7. [Feed Forward Back Propagation]()
+8. [Naive Bayes]()
 
 
 Cyber
