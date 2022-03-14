@@ -5,7 +5,7 @@ AI
 4. [Best First Search](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/best_first.py)
 5. [Decision Tree Learning](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/decision_tree.py)
 6. [ANN](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/ANN.py)
-7. [Feed Forward Back Propagation]()
+7. [Feed Forward Back Propagation](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/Feed_forward.py)
 8. [Naive Bayes]()
 
 
