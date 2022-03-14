@@ -1,7 +1,7 @@
 AI
 1. [Breadth First Search](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/bfs.py)
 2. [Deep Depth First](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/dfs.py)
-3. [A* search]()
+3. [A* search](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/A-star.py)
 4. [Best First Search]()
 5. [Decision Tree Learning]()
 6. [ANN]()
