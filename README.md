@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 1. [Chinese Remainder Theorem](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/ChineseRemainderTheorem.java)
 2. [Fermat's Little Theorem](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/FermatsLittletheorem.java)
 3. [Affine Chipher](https://raw.githubusercontent.com/killerMscBoi/killermscboi/main/AffineCipher.java)
